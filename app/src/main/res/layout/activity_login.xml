@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+
+              tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logobaitulmal" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:layout_marginBottom="30dp"
+                android:text="Panel\nFundraiser"/>
+
+        <EditText
+                android:id="@+id/et_idfr"
+                android:layout_marginTop="20dp"
+                android:hint="Id Fundraiser"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/user"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+        />
+
+        <EditText
+                android:id="@+id/et_password"
+                android:hint="Password"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/pw"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+        />
+        <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#009688"
+                android:text="Login"
+                android:textColor="@android:color/white" />
+
+        <Button
+                android:id="@+id/btn_reset_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:text="Lupa password?"
+                android:textAllCaps="false"
+                android:textColor="#009688" />
+
+        <!-- Link to Login Screen -->
+
+
+
+    </LinearLayout>
+</LinearLayout>

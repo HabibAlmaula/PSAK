@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.donaturkotak.UpdateDonaturKotakActivity">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="10dp"
+                      android:layout_margin="10dp"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Nama Outlet"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_NamaOultet"
+                        android:text="Nama"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Nama Pemilik"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_Namapemilik"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Jenis Usaha"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_Jenisusaha"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Alamat Outlet"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <EditText
+                        android:id="@+id/et_alamatOutlet"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Alamat Pemilik"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_alamatPemilik"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Nomer Hp"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_noHp"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Tanggal Pasang"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:text=" : "
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"/>
+
+                <EditText
+                        android:id="@+id/et_tglPasang"
+                        android:text="Nama"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_alertLokasi"
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:textColor="#CF2121"
+                    android:layout_marginTop="10dp"
+                    android:text="Lokasi belum ditambahkan, klik tambah lokasi"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <Button
+                        android:id="@+id/btn_addlokasi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="tambah lokasi"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"/>
+                <Button
+                        android:id="@+id/btn_updateDonatur"
+                        android:layout_width="0dp"
+                        android:text="Ok"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

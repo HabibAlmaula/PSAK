@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".fragments.donatur.DonaturFragment">
+    <de.clemenskeppler.materialsearchview.MaterialSearchView
+            android:id="@+id/sv_donatur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Spinner
+            android:id="@+id/spinnerdonatur"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+    <ProgressBar
+            android:id="@+id/progress_listDonatur"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tv_errorloaddonatur"
+            android:text="Error loading, Tap to try again"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_below="@id/progress_listDonatur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_alldonatur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/spinnerdonatur"/>
+    <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_add_donatur"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            app:menu_labels_ellipsize="end"
+            app:menu_labels_singleLine="true"
+            app:menu_backgroundColor="#ccffffff"
+            android:layout_width="match_parent"
+            app:menu_fab_size="normal"
+            android:layout_height="match_parent"
+            app:menu_shadowColor="#444"
+            app:menu_colorNormal="#027C6B"
+            app:menu_colorPressed="#10927E"
+            app:menu_colorRipple="#026457">
+
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_donatur_kotak"
+                android:layout_width="wrap_content"
+                app:fab_colorNormal="#0AA212"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_balance_wallet"
+                app:fabSize="mini"
+                app:fab_label="Donatur Kotak"
+        />
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_donatur_tetap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#048FCF"
+                android:src="@drawable/ic_account_balance_wallet"
+                app:fabSize="mini"
+                app:fab_label="Donatur Tetap"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

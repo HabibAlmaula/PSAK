@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".fragments.donasi.DonasiFragment">
+
+  <TextView
+          android:text="Donasi Fragment"
+          android:layout_centerInParent="true"
+          android:textSize="25sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_add_donasi"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            app:menu_labels_ellipsize="end"
+            app:menu_labels_singleLine="true"
+            app:menu_backgroundColor="#ccffffff"
+            android:layout_width="match_parent"
+            app:menu_fab_size="normal"
+            android:layout_height="match_parent"
+            app:menu_shadowColor="#444"
+            app:menu_colorNormal="#027C6B"
+            app:menu_colorPressed="#10927E"
+            app:menu_colorRipple="#026457">
+
+
+    <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_donasi_kotak"
+                android:layout_width="wrap_content"
+                app:fab_colorNormal="#0AA212"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_balance_wallet"
+                app:fabSize="mini"
+                app:fab_label="Donasi Kotak"
+        />
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_donasi_tetap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#048FCF"
+                android:src="@drawable/ic_account_balance_wallet"
+                app:fabSize="mini"
+                app:fab_label="Donasi Tetap"
+        />
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_donasi_insidental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#FFC107"
+                android:src="@drawable/ic_account_balance_wallet"
+                app:fabSize="mini"
+                app:fab_label="Donasi Insidental"
+        />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

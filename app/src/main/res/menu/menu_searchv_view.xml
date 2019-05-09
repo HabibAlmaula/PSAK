@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_scan_barcode"
+          android:title="scan barcode"
+          android:orderInCategory="2"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_action_barcode_1"/>
+    <item android:id="@+id/action_search"
+          android:title="search donatur"
+          app:showAsAction="always"
+          android:icon="@android:drawable/ic_menu_search"
+          />
+
+</menu>
